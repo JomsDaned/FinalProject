@@ -10,7 +10,37 @@
     </div>
     <link rel="stylesheet" href="styles.css">
   </header>
-
+ <head>
+      <style>
+        td:hover {
+          background-color: #75897b;
+          font-size: 18px;
+        }
+  
+        .cow-sprite {
+          width: 64px; 
+          height: 64px;
+          background: url('sprit.png') left top no-repeat;
+          animation: play-cow 1s steps(4) infinite;
+          margin: 2em auto;
+        }
+  
+        @keyframes play-cow {
+          from { background-position: 0 0; }
+          to { background-position: -256px 0; } 
+        }
+  
+        h2 {
+          display: none;
+          background-color: #3a564b;
+          padding: 20px;
+        }
+  
+        div:hover h2 {
+          display: block;
+        }
+      </style>
+    </head>
    <body>
 <nav>
     <div>
@@ -22,6 +52,8 @@
           <td style="font-family: Sans serif"><a href="Aboutus.html">About us</td>
           <td style="font-family: Sans serif"><a href="Moreinfo.html">More Info</a></td>
           <td style="font-family: Sans serif"><a href="contactus.html">Contact us</td>
+          <td style="font-family: Sans serif"><a href="signup.html">Sign Up</a></td>
+          <td style="font-family: Sans serif"><a href="profile.html">Profile</a></td>
           </nav> 
 
         </tr>
